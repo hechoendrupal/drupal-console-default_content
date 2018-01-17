@@ -1,0 +1,12 @@
+description: 'Exports all taxonomy terms entities for a specific Taxonomy'
+arguments:
+  taxonomy-vid: 'The taxonony VID.'
+  entity-id: 'The ID of the entity to export.'
+options:
+  module: 'The Module to export taxonony terms'
+messages:
+  taxonomy-exported: 'Taxonomy %s was exported to module %s'
+  module-not-found: 'Module to export to was not provided'
+  invalid-taxonomy: 'Taxonomy %s is invalid'
+questions:
+  taxonomy: 'Taxonomy'

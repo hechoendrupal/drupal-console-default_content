@@ -1,0 +1,11 @@
+description: 'Exports all menu entities for a specific menu parent'
+arguments:
+ parent-menu: 'The parent menu.'
+options:
+  module: 'The Module to export menu content'
+messages:
+  taxonomy-exported: 'Menu content %s was exported to module %s'
+  module-not-found: 'Module to export to was not provided'
+  invalid-taxonomy: 'The parent menu %s is invalid'
+questions:
+  parent-menu: 'Parent Menu'
