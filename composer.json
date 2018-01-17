@@ -1,0 +1,20 @@
+{
+  "name": "drupal/drupal-console-default_content",
+  "description": "Drupal Console Extend Template",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Jesus Manuel Olivas",
+      "email": "jesus.olivas@gmail.com"
+    }
+  ],
+  "require": {
+    "drupal/console-extend-plugin":"~0",
+    "drupal/console-extend-example": "~0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {"Drupal\\Console\\Extend\\": "src"}
+  }
+}
