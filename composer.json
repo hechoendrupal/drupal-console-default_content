@@ -1,11 +1,16 @@
 {
   "name": "drupal/console-default_content",
-  "description": "Drupal Console Extend Template",
+  "description": "Drupal Console Default Content Commands",
+  "type": "drupal-console-library",
   "license": "GPL-2.0+",
   "authors": [
     {
       "name": "Jesus Manuel Olivas",
       "email": "jesus.olivas@gmail.com"
+    },
+    {
+      "name": "Miguel Castillo",
+      "email": "mcastillo@anexusit.com"
     }
   ],
   "require": {
@@ -15,6 +20,9 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "autoload": {
-    "psr-4": {"Drupal\\Console\\Extend\\": "src"}
+    "psr-4": {"Drupal\\Console\\default_content\\": "src"}
+  },
+  "require-dev": {
+    "drupal/console-core": "~1.0"
   }
 }
