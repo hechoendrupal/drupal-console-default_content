@@ -1,0 +1,13 @@
+description: 'Exports a single entity'
+arguments:
+  entity-type: 'The entity type to export.'
+  entity-id: 'The ID of the entity to export.'
+options:
+  module: 'The Module to export entity'
+messages:
+  entity-not-found: 'Entity %s with id %s was not found'
+  entity-exported: 'Entity %s with id %s was exported at file %s'
+  module-not-found: 'Module to export was not provided'
+questions:
+  entity-type: 'Entity type'
+  entity-id: 'Entity ID'
