@@ -1,5 +1,5 @@
 {
-  "name": "drupal/drupal-console-default_content",
+  "name": "drupal/console-default_content",
   "description": "Drupal Console Extend Template",
   "license": "GPL-2.0+",
   "authors": [
@@ -10,7 +10,7 @@
   ],
   "require": {
     "drupal/console-extend-plugin":"~0",
-    "drupal/console-extend-example": "~0"
+    "drupal/default_content": "1.x-dev"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
