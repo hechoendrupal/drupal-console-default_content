@@ -11,7 +11,7 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Drupal\Console\Core\Command\ContainerAwareCommand;
+use Drupal\Console\Core\Command\Command;
 use Drupal\Console\Core\Command\Shared\CommandTrait;
 use Drupal\Console\Command\Shared\ModuleTrait;
 use Drupal\Console\Core\Style\DrupalStyle;
@@ -30,7 +30,7 @@ use Drupal\Console\Annotations\DrupalCommand;
  *     extensionType = "module"
  * )
  */
-class DefaultExportCommand extends ContainerAwareCommand
+class DefaultExportCommand extends Command
 {
 
     use CommandTrait;
