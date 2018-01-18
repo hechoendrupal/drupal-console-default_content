@@ -2,6 +2,7 @@
 
 /**
  * @file
+ * Contains Drupal\Console\default_content\Command\DefaultExportCommand.
  */
 
 namespace Drupal\Console\default_content\Command;
@@ -10,7 +11,7 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Command\Command;
+use Drupal\Console\Core\Command\ContainerAwareCommand;
 use Drupal\Console\Core\Command\Shared\CommandTrait;
 use Drupal\Console\Command\Shared\ModuleTrait;
 use Drupal\Console\Core\Style\DrupalStyle;
@@ -21,13 +22,15 @@ use Drupal\Console\Core\Utils\StringConverter;
 use Drupal\default_content\Exporter;
 use Drupal\Core\Entity\Query\QueryFactory;
 use Drupal\Core\Entity\EntityTypeRepositoryInterface;
+use Drupal\Console\Annotations\DrupalCommand;
 
 /**
- * Class DefaultExportCommand.
- *
- * @package Drupal\default_content
+ * @DrupalCommand(
+ *     extension = "default_content",
+ *     extensionType = "module"
+ * )
  */
-class DefaultExportCommand extends Command
+class DefaultExportCommand extends ContainerAwareCommand
 {
 
     use CommandTrait;
