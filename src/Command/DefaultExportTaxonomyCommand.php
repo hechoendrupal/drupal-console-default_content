@@ -1,12 +1,17 @@
 <?php
 
+/**
+ * @file
+ * Contains Drupal\Console\default_content\Command\DefaultExportTaxonomyCommand.
+ */
+
 namespace Drupal\Console\default_content\Command;
 
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Command\Command;
+use Drupal\Console\Core\Command\ContainerAwareCommand;
 use Drupal\Console\Core\Command\Shared\CommandTrait;
 use Drupal\Console\Command\Shared\ModuleTrait;
 use Drupal\Console\Core\Style\DrupalStyle;
@@ -16,13 +21,15 @@ use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Console\Core\Utils\StringConverter;
 use Drupal\default_content\Exporter;
 use Drupal\Core\Entity\Query\QueryFactory;
+use Drupal\Console\Annotations\DrupalCommand;
 
 /**
- * Class DefaultExportTaxonomyCommand.
- *
- * @package Drupal\default_content
+ * @DrupalCommand(
+ *     extension = "default_content",
+ *     extensionType = "module"
+ * )
  */
-class DefaultExportTaxonomyCommand extends Command {
+class DefaultExportTaxonomyCommand extends ContainerAwareCommand {
 
     use CommandTrait;
     use ModuleTrait;

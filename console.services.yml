@@ -12,7 +12,7 @@ services:
       - { name: drupal.command }
 
   default_content.default_content_export:
-    class: Drupal\Console\default_content\Commands\DefaultExportCommand
+    class: Drupal\Console\default_content\Command\DefaultExportCommand
     arguments: ['@console.extension_manager','@entity_type.manager','@console.string_converter','@entity.query','@entity_type.repository','@default_content.exporter']
     tags:
       - { name: drupal.command }
