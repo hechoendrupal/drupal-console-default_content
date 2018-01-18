@@ -4,7 +4,7 @@
  * @file
  */
 
-namespace Drupal\default_content\Commands;
+namespace Drupal\Console\default_content\Command;
 
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;

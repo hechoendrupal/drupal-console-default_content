@@ -1,18 +1,18 @@
 services:
   default_content.export_menu:
-    class: Drupal\default_content\Commands\DefaultExportMenuCommand
+    class: Drupal\Console\default_content\Command\DefaultExportMenuCommand
     arguments: ['@console.extension_manager','@entity_type.manager','@console.string_converter','@entity.query','@default_content.exporter']
     tags:
       - { name: drupal.command }
 
   default_content.default_content_export_taxonomy:
-    class: Drupal\default_content\Commands\DefaultExportTaxonomyCommand
+    class: Drupal\Console\default_content\Command\DefaultExportTaxonomyCommand
     arguments: ['@console.extension_manager','@entity_type.manager','@console.string_converter','@entity.query','@default_content.exporter']
     tags:
       - { name: drupal.command }
 
   default_content.default_content_export:
-    class: Drupal\default_content\Commands\DefaultExportCommand
+    class: Drupal\Console\default_content\Commands\DefaultExportCommand
     arguments: ['@console.extension_manager','@entity_type.manager','@console.string_converter','@entity.query','@entity_type.repository','@default_content.exporter']
     tags:
       - { name: drupal.command }
